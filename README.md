@@ -8,6 +8,6 @@ Detailed description : This project implements a multi-functional graphical calc
 
 ![Running Calculator](https://github.com/9674036-code/portfolio/blob/main/images/Calculator%20Image.png?raw=true)
 
-* [Windows EXE](https://github.com/9674036-code/portfolio/blob/main/src/Calculator/windows-amd64.zip)
+* [Windows EXE](https://github.com/9674036-code/portfolio/blob/main/src/Calculator/Windows%20Calculator.zip)
 * [MacOSX](https://github.com/9674036-code/portfolio/blob/main/src/Calculator/macos-aarch64.zip)
-* [Source Code](https://github.com/9674036-code/portfolio/blob/main/src/Calculator/Calculator%20final%201.zip)
+* [Source Code](https://github.com/9674036-code/portfolio/blob/main/src/Calculator/Caclulator%20Final%20Product-2025.zip)
