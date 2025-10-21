@@ -11,5 +11,5 @@
 ![Running Calculator](https://github.com/9674036-code/portfolio/blob/main/images/Calculator%20Image.png?raw=true)
 
 * [Windows EXE](https://github.com/9674036-code/portfolio/blob/main/src/Calculator/Windows%20Calculator.zip)
-* [MacOSX](https://github.com/9674036-code/portfolio/blob/main/src/Calculator/macos-aarch64.zip)
+* [MacOSX](https://github.com/9674036-code/portfolio/blob/main/src/Calculator/macos-aarch64%202.zip)
 * [Source Code](https://github.com/9674036-code/portfolio/tree/main/src/Calculator)
