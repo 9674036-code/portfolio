@@ -12,6 +12,6 @@
 
 ![CalculatorUML](https://github.com/9674036-code/portfolio/blob/main/images/EthanTangCalculatorUML.jpg?raw=true)
 
-* [Windows EXE](https://github.com/9674036-code/portfolio/blob/main/src/Calculator/windows-amd64%202.zip)
-* [MacOSX](https://github.com/9674036-code/portfolio/blob/main/src/Calculator/macos-aarch64%202.zip)
+* [Windows EXE](https://github.com/9674036-code/portfolio/blob/main/src/Calculator/windows-amd64.zip)
+* [MacOSX](https://github.com/9674036-code/portfolio/blob/main/src/Calculator/macos-aarch64.zip)
 * [Source Code](https://github.com/9674036-code/portfolio/tree/main/src/Calculator)
