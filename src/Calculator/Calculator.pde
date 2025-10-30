@@ -1,4 +1,4 @@
-//Ethan Tang | 9/25/25 | Calculator //<>//
+//Ethan Tang | 9/25/25 | Calculator
 
 StringList standardCalc;
 StringList vals;
@@ -28,6 +28,7 @@ float yMin=-10;
 float x;
 String dVal, fVal, fVal2, cmdMonitor, xPlaceh, yPlaceh;
 String result=" ";
+
 boolean isNums(String a) {
   try {
     Float.parseFloat(a);
@@ -45,9 +46,9 @@ void setup() {
   dVal="0";
   vals=new StringList();
   standardCalc=new StringList();
-  cmdButtons[0] = new Button(100-20, 520, 100, 100, #ccb5e8, #DED3EB, "C");
+  cmdButtons[0] = new Button(100-20, 520, 100, 100, #ccb5e8, #DED3EB, "c");
   opButtons[0] = new Button(220-20, 520, 80, 100, #9fd2e3, #C1DDE6, "÷");
-  opButtons[1] = new Button(340-30, 520, 80, 100, #9fd2e3, #C1DDE6, "X");
+  opButtons[1] = new Button(340-30, 520, 80, 100, #9fd2e3, #C1DDE6, "*");
   opButtons[2] = new Button(460-40, 520, 80, 100, #9fd2e3, #C1DDE6, "-");
   opButtons[3] = new Button(580-50, 520, 80, 100, #9fd2e3, #C1DDE6, "+");
   for (int counter=1; counter<10; counter++) {
@@ -83,37 +84,39 @@ void draw() {
   updateDisplay();
 }
 
-void keyPressed() {
+void keyReleased() {
   for (int i=0; i<numButtons.length; i++) {
-    if (str(key)==numButtons[i].val) {
+    if (str(key).equals(numButtons[i].val)) {
       dVal=str(i);
+      println(dVal);
       pressedCounter++;
     }
   }
   for (int i=0; i<opButtons.length; i++) {
-    if (str(key)==opButtons[i].val) {
-      if (str(key).equals("±")) {
-        negative=true;
-      } else {
-        dVal=opButtons[i].val;
-        pressedCounter++;
-      }
+    if (str(key).equals(opButtons[i].val)) {
+      dVal=opButtons[i].val;
+      pressedCounter++;
     }
+  }
+  if (str(key).equals("/")) {
+    dVal=opButtons[0].val;
+    pressedCounter++;
   }
   for (int i=0; i<cmdButtons.length; i++) {
-    if (str(key)==cmdButtons[i].val || key==ENTER|| key==RETURN) {
+    if (str(key).equals(cmdButtons[i].val) || key==ENTER|| key==RETURN) {
       if (i==0) {
-        cmdMonitor="C";
+        cmdMonitor="c";
         println(cmdMonitor);
       } else if (key==ENTER || key==RETURN) {
-        cmdMonitor="ExE";
+        cmdMonitor="EXE";
         println(cmdMonitor);
       }
     }
   }
+  println(key);
 }
 
-void mousePressed() {
+void mouseReleased() {
   for (int i=0; i<numButtons.length; i++) {
     numButtons[i].clicked(mouseX, mouseY);
     if (clicked==true) {
@@ -136,7 +139,7 @@ void mousePressed() {
     cmdButtons[i].clicked(mouseX, mouseY);
     if (clicked==true) {
       if (i==0) {
-        cmdMonitor="C";
+        cmdMonitor="c";
         println(cmdMonitor);
       } else if (cmdButtons[i]==cmdButtons[1]) {
         graphToggle*=(-1);
@@ -191,6 +194,7 @@ void updateDisplay() {
   textSize(35);
   strokeWeight(6);
   textAlign(LEFT);
+  
   if (flash==0) { //flashing cursor
     Toggle=Toggle*(-1);
     flash=+1;
@@ -227,8 +231,8 @@ void updateDisplay() {
       }
     }
   }
-  println(vals); //check on vals
-  if (cmdMonitor=="C") { //Clear Button code
+  //check on vals
+  if (cmdMonitor=="c") { //Clear Button code
     vals.clear();
     pressedCounter=(0);
     cmdMonitor=" ";
@@ -284,7 +288,7 @@ void updateDisplay() {
     line(width/2, 20, width/2, 460);
     line(20, 240, 760, 240);
     for (int i=0; i<abs(xMax)+abs(xMin)+1; i++) {
-      line(20+(740/(abs(xMax)+abs(xMin))*i), 240+2,20+(740/(abs(xMax)+abs(xMin))*i), 240-2);
+      line(20+(740/(abs(xMax)+abs(xMin))*i), 240+2, 20+(740/(abs(xMax)+abs(xMin))*i), 240-2);
     }
     for (int i=0; i<abs(yMax)+abs(yMin)+1; i++) {
       line(width/2-2, 20+(440/(abs(yMin)+abs(yMax))*i), width/2+2, 20+(440/(abs(yMin)+abs(yMax))*i));
@@ -346,19 +350,17 @@ void updateDisplay() {
       windowCount=0;
       windowToggle*=(-1);
       window=false;
-      cmdMonitor="C";
+      cmdMonitor="c";
     }
   }
   negative=false;
 }
-
 
 void performCalculation() {
   fill(30);
   textAlign(LEFT);
   tOp=0;
   standardCalc=new StringList();
-
   for (int i=0; i<vals.size(); i++) {
     if (Float.isNaN(float(vals.get(i)))&&vals.get(i)!="."&&vals.get(i)!="x") {
       standardCalc.resize(standardCalc.size()+2);
@@ -386,8 +388,6 @@ void performCalculation() {
       }
     }
   }
-
-
   println(standardCalc);
   for (int i=0; i<tOp; i++) {
     for (int i2=0; i<(standardCalc.size())-1; i2++) {
@@ -434,7 +434,7 @@ void performCalculation() {
       }
     }
     for (int i2=0; i<(standardCalc.size())-1; i2++) {
-      if (standardCalc.get(i2).equals("X")) {
+      if (standardCalc.get(i2).equals("*")) {
         minusI=i2-1;
         plusI=i2+1;
         standardCalc.set(i2, str(float(standardCalc.get(minusI))*float(standardCalc.get(plusI))));
@@ -494,7 +494,6 @@ void performCalculation() {
       }
     }
   }
-
   result=standardCalc.get(0);
   println(standardCalc);
   println(result);
@@ -591,7 +590,7 @@ void graphCalc() {
         }
       }
       for (int i2=0; i<(standardCalc.size())-1; i2++) {
-        if (standardCalc.get(i2).equals("X")) {
+        if (standardCalc.get(i2).equals("*")) {
           minusI=i2-1;
           plusI=i2+1;
           standardCalc.set(i2, str(float(standardCalc.get(minusI))*float(standardCalc.get(plusI))));
@@ -653,6 +652,7 @@ void graphCalc() {
     }
     lineVals.append(float(standardCalc.get(0)));
   }
+
   for (int i=0; i<lineVals.size(); i++) {
     if (lineVals.get(i)>0) {
       lineVals.set(i, 240-(220/abs(yMax)*lineVals.get(i)));
