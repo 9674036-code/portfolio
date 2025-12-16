@@ -1,4 +1,8 @@
-# Ethan Tang's Programming Portfolio|3b2026
+# Programming I Portfolio | Ethan Tang | Contact Info: epvnrt2.26@gmail.com
+
+## Certifications:
+
+![Computer Programming 1 Certification](https://github.com/9674036-code/portfolio/blob/main/images/Computer%20Programming%201%20certification.png?raw=true)
 
 ## Projects for Term 1
 
