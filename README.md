@@ -20,6 +20,22 @@
 * [MacOSX](https://github.com/9674036-code/portfolio/blob/main/src/Calculator/macos-aarch64.zip)
 * [Source Code](https://github.com/9674036-code/portfolio/tree/main/src/Calculator)
 
+### MakingCars(2025)
+
+**Description:** This project uses an object-based approach in order to create and display an array of 100 "car" objects on the screen. Each car moves and accelerates horizontally across the screen and resets its position once the given car reaches the edge of the diplay. 
+
+![Making Cars](https://github.com/9674036-code/portfolio/blob/main/images/CP1MakingCars.png?raw=true)
+
+* [Source Code](https://github.com/9674036-code/portfolio/tree/main/src/GradeConverter)
+
+### Grade Converter(2025)
+
+**Description:** This project provides a simple application in which the user can input a PBL-based grade on scale from 0 to 4 using the poisition of thier mouse on the timeline displayed. The program will then return a letter-grade based on the user's input that is displayed on the screen.
+
+![Grade Converter](https://github.com/9674036-code/portfolio/blob/main/images/CP1GradeConverter.png?raw=true)
+
+* [Source Code](https://github.com/9674036-code/portfolio/tree/main/src/MakingCars)
+
 ### Timeline(2025)
 
 **Description:** This project uses a series of if blocks in order to determine the user's mouse position in order to display varying text onto the screen depending on mouse position, creating an interactive timeline in which the user can learn a very brief history regarding the development of computers. 
