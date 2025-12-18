@@ -2,8 +2,6 @@
 
 ## Certifications:
 
-**Computer Programing 1 Certficiate:**
-
 [Computer Programming 1 Certification](https://github.com/9674036-code/portfolio/blob/main/images/Ethan%20Tang%20Computer%20Programming%201%20Certificate.pdf)
 
 ## Projects for Term 1
@@ -24,4 +22,9 @@
 
 ### Timeline(2025)
 
-**Description:** This project 
+**Description:** This project uses a series of if blocks in order to determine the user's mouse position in order to display varying text onto the screen depending on mouse position, creating an interactive timeline in which the user can learn a very brief history regarding the development of computers. 
+
+![Timeline](https://github.com/9674036-code/portfolio/blob/main/images/Cp1Timeline.png?raw=true)
+
+* [Source Code](https://github.com/9674036-code/portfolio/blob/main/src/Timeline/Timeline.pde)
+
