@@ -3,7 +3,8 @@
 ## Certifications:
 
 **Computer Programing 1 Certficiate:**
-![Computer Programming 1 Certification](https://github.com/9674036-code/portfolio/blob/main/images/Ethan%20Tang%20Computer%20Programming%201%20Certificate.pdf)
+
+*[Computer Programming 1 Certification](https://github.com/9674036-code/portfolio/blob/main/images/Ethan%20Tang%20Computer%20Programming%201%20Certificate.pdf)
 
 ## Projects for Term 1
 
