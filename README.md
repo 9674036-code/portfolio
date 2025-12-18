@@ -13,7 +13,8 @@
 ![MusikHelfer](https://github.com/Kai535813/Musikhelfer/blob/main/images/Musik%20Helfer%20Start%20Screen.png?raw=true)
 
 **Link to group repository:**
-[MusikHelfer](https://kai535813.github.io/Musikhelfer/)
+
+[Source Code](https://kai535813.github.io/Musikhelfer/)
 
 [Personal Contribution Document](https://github.com/Kai535813/Musikhelfer/blob/main/docs/Ethan%20Tang%20%7C%203B%20%7C%20Individual%20Contributions.md)
 
