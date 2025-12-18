@@ -14,6 +14,7 @@
 
 **Link to group repository:**
 [MusikHelfer](https://kai535813.github.io/Musikhelfer/)
+
 [Personal Contribution Document](https://github.com/Kai535813/Musikhelfer/blob/main/docs/Ethan%20Tang%20%7C%203B%20%7C%20Individual%20Contributions.md)
 
 ## Projects for Term 1
