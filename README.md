@@ -8,7 +8,7 @@
 
 ### MusikHelfer (2025)
 
-**Description:** This project is a music application with four main utilites: an Interval Ear Training Page, Tuner, Harmonizer and Metronome. The project uses the proccessing sound library in order to play a variety of pitches through piano sound files. The Interval Ear Training Page selects a random interval and scale degree and plays the interval. The user has to then guess the interval using an array of buttons and the program will respond with an indication of a correct or incorrect answer. 
+**Description:** This project is a music application with four main utilites: an Interval Ear Training Page, Tuner, Harmonizer and Metronome. The project uses the proccessing sound library in order to play a variety of pitches through piano sound files. The Interval Ear Training Page selects a random interval and scale degree and plays the interval. The user has to then guess the interval using an array of buttons and the program will respond with an indication of a correct or incorrect answer. The Tuner plays any given pitch based 
 
 ![MusikHelfer](https://github.com/Kai535813/Musikhelfer/blob/main/images/Musik%20Helfer%20Start%20Screen.png?raw=true)
 
